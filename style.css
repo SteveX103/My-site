@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #020617;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: #020617;
+  padding: 12px;
+}
+
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.project {
+  background: #020617;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.slide-down {
+  animation: slideDown 1.2s ease;
+}
+
+.slide-up {
+  animation: slideUp 1.2s ease;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
