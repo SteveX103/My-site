@@ -12,35 +12,67 @@
 
 <body>
 
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">Pratyush Biswas</a>
-    </div>
-
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:yourmail@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </nav>
+  <!-- Reusable Navbar -->
+  <div id="navbar-placeholder"></div>
 
   <section class="page">
     <h1>Contact Me</h1>
 
-    <div class="contact-box">
-      <p><i class="fas fa-phone"></i> +91 8918664551</p>
-      <p><i class="fas fa-envelope"></i> ppratyushbbiswas2003@gmail.com</p>
-      <p><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/pratyush-biswas-32179a232/</p>
-      <p><i class="fab fa-github"></i> github.com/SteveX103</p>
-      <p><i class="fab fa-instagram"></i> instagram.com/jake_lockley_here</p>
+    <p class="contact-intro">
+      I am actively seeking opportunities in <strong>Data Science, Data Analysis, and AI-ML</strong>.
+      Feel free to reach out using any of the methods below.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- Phone -->
+      <a href="tel:+918918664551" class="contact-card">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+91 8918664551</p>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:ppratyushbbiswas2003@gmail.com?subject=Opportunity%20Discussion" class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>ppratyushbbiswas2003@gmail.com</p>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/pratyush-biswas-32179a232/" target="_blank" class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p>Professional Profile</p>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/SteveX103" target="_blank" class="contact-card">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p>Projects & Code</p>
+      </a>
+
+      <!-- Instagram (optional) -->
+      <a href="https://www.instagram.com/jake_lockley_here" target="_blank" class="contact-card">
+        <i class="fab fa-instagram"></i>
+        <h3>Instagram</h3>
+        <p>Personal</p>
+      </a>
+
     </div>
+
+    <!-- CTA -->
+    <div class="contact-cta">
+      <p>Looking for a motivated fresher in Data / AI-ML?</p>
+      <a href="mailto:ppratyushbbiswas2003@gmail.com?subject=Interview%20Opportunity" class="btn primary">
+        Contact Me for Opportunities
+      </a>
+    </div>
+
   </section>
 
+  <script src="assets/js/navbar.js"></script>
 </body>
 
 </html>
