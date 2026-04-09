@@ -499,3 +499,83 @@ html,
 body {
   min-height: 100%;
 }
+
+/* =========================
+   EXPERIENCE TIMELINE
+   ========================= */
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+
+/* vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #38bdf8;
+  opacity: 0.3;
+}
+
+/* item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+/* dot */
+.timeline-dot {
+  position: absolute;
+  left: -2px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: #38bdf8;
+  border-radius: 50%;
+}
+
+/* content */
+.timeline-content {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-content h3 {
+  color: #38bdf8;
+  margin-bottom: 5px;
+}
+
+.company {
+  font-size: 14px;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+/* tech tags */
+.exp-tech span {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 8px;
+  background: #0b1220;
+  color: #38bdf8;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
