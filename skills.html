@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Skills — Pratyush Biswas</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/premium-upgrade.css">
   <style>
     .mobile-only {
       display: none
@@ -322,6 +323,7 @@
         href="https://github.com/SteveX103" target="_blank">GitHub</a></p>
   </footer>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/cursor-glow.js"></script>
   <script>
     const bo = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.querySelectorAll('.prof-fill').forEach(b => { b.style.width = b.dataset.w + '%' }); } }); }, { threshold: .2 });
     document.querySelectorAll('#profList').forEach(el => bo.observe(el));
